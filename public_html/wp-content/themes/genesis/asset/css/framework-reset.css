@@ -1,0 +1,800 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body { margin-bottom: 0px;background-color: #f8f8f8}
+ul, ol {padding-left: 0px;}
+ul li a {font-size: 1em; line-height: inherit;}
+.component-content ul li, .component-content ol li {line-height:inherit;}
+
+.component-content ol, ol,
+.component-content ul, ul {
+    list-style-position: inside;
+/*    margin: 1em 0;*/
+    padding: 0;
+}
+
+
+/*Members Login Popup*/
+#rt-popup,#rokbox-caption {display: none;}
+#rokbox-middle .rokbox-center{position:relative; height: 380px !important;}
+#rokbox-close {left: 195px; position: relative; top: 0; z-index: 10;}
+#rokbox-container {position: relative;top: 0px; z-index: 5;}
+#modlgn_username, #modlgn_passwd{width:205px;}
+#modlgn_remember{position:relative;	top:2px; left:10px;}
+
+#form-login p {margin-bottom: 15px;}
+div.k2LoginBlock fieldset.input p {margin: 0; padding: 0;}	
+
+
+
+/*----------------------------------Mainbody------------------------------------------*/
+
+div.itemIsFeatured, div.catItemIsFeatured, div.userItemIsFeatured { background: none;}
+
+/*Lists*/
+.even, .odd{background: none; border-bottom: none; padding: 0px;}
+
+
+/*---------------Category Listing-------------------*/
+
+/*#team .itemListView #itemListLeading,*/
+.genericItemBody,
+div.CommentBody,
+div.itemBody,
+div.catItemBody {
+    margin: 0; 
+    padding: 15px 20px 22px;
+    background: url(../images/template/catItemBody.gif) 0 0 repeat-x white;
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+#team .itemListView #itemListLeading {
+    margin: 0; 
+    padding: 0;
+    background: url(../images/template/catItemBody.gif) 0 0 repeat-x white;
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #e7e7e7;
+}
+#team .itemListView #itemListLeading div.itemContainer {margin: 0;}
+
+
+#team .itemListView #itemListLeading div.catItemBody {
+    background: none;
+    border-bottom: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 20px 20px 22px;
+}
+#team .itemListView #itemListLeading div.catItemBody .catItemImageBlock {
+    float: none;
+    margin: 0;
+}
+#team .itemListView #itemListLeading div.catItemBody h3.catItemTitle {
+    color: black;
+    padding: 16px 0 4px;
+}
+
+.portfolio div.catItemBody {padding: 20px 20px 22px; border-radius: 0;}
+
+.genericItemDateCreated,
+span.commentDate,
+span.commentAuthorName,
+span.itemDateCreated,
+span.catItemDateCreated,
+span.catItemAuthor,
+span.itemAuthor,
+div.catItemCommentsLink {
+    font: bold 11px/14px arial;
+    color: #a2a2a2;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 18px;
+}
+    span.commentAuthorName a,
+    span.catItemAuthor a {color: #505050;}
+
+span.commentDate,
+span.catItemAuthor,
+span.itemAuthor,
+div.catItemCommentsLink {
+    background: url(../images/template/span.gif) 0 4px no-repeat;
+    padding-left: 15px;
+    margin-left: 10px;
+}    
+
+div.itemListCategory {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0px;
+}
+
+div.catItemView {padding: 0px;}
+
+div.catItemCategory {
+    border-bottom: 1px solid #CFCFCF;
+    padding: 10px 12px 12px;
+}
+
+div.catItemCommentsLink {
+    border-right: none;
+}
+
+div.catItemHitsBlock {
+    border-bottom: none;
+    padding: 0px;
+}
+
+div.catItemCategory span {color:inherit;}
+
+
+div.catItemIntroText {
+    font-size: inherit;
+    font-weight: normal;
+    line-height: inherit;
+    padding: 0px;
+	margin: 0 1em 0 0;
+}
+
+div.catItemTagsBlock {
+    border-bottom: none;
+    padding: 0px;
+}
+
+div.catItemLinks {margin: 0; padding: 0;}
+
+div.catItemHeader span.catItemDateCreated {
+    color: inherit;
+    font-size: 1em;
+}
+.portfolio div.catItemHeader span.catItemDateCreated {
+    color: #a8a8a8;
+    font-size: 1em;
+    padding: 5px 0 0;
+}
+
+div.itemCommentsPagination {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Edit Button*/
+
+span.catItemEditLink a,
+span.catItemEditLink a:hover,
+span.itemEditLink a,
+span.itemEditLink a:hover {
+    background: none;
+    border:none;
+}
+
+
+
+/*---Category listing images---*/
+
+span.catItemImage img {border: none; padding: 0px;}
+div.catItemImageBlock {
+    margin: 0 19px 0px 0; 
+    padding: 0px;
+    float: left;
+}
+.port div.catItemImageBlock {
+    margin: 0 0px 0px 0; 
+    padding: 0px;
+    float: none;
+}
+span.catItemImage {display: block; margin: 0; text-align: left;}
+span.catItemImage a{display:block;}
+
+/*---------------------------Generic View (Archives, Search)----------------------------*/
+
+div.genericItemView {border-bottom: none; margin: 0 0 19px; padding: 0;}
+div.genericItemBody {
+    margin: 0; 
+    padding: 15px 20px 22px;
+}
+div.genericItemIntroText {font-size: inherit;  font-weight: inherit; line-height: inherit; padding: 0; overflow: hidden;}
+span.genericItemImage img {border: none; padding: 0px; margin: 0.5em 1em 0 0;}
+
+/*--------------------------------------Author Page-------------------------------------*/
+div.userItemBody {margin: 0; padding: 0;}
+span.userItemImage img {border: none; padding: 0px; margin: 0.5em 1em 0 0;}
+div.userItemIntroText {font-size: inherit;  font-weight: inherit; line-height: inherit; padding: 0; overflow: hidden;}
+div.userItemView{border-bottom: none; margin: 0 0 3em; padding: 0;}
+
+/*------------------------------------------Item View---------------------------------*/
+
+div.itemToolbar {
+    background: none;
+    border-bottom: none;
+    border-top: none;
+    margin: 0px 0 0;
+    padding: 0;
+}
+
+div.itemToolbar ul li a#fontDecrease:hover,
+div.itemToolbar ul li a#fontIncrease:hover {text-decoration:none;}
+
+div.itemHeader span.itemDateCreated {
+    color: inherit;
+    font-size: 1em;
+}
+
+div.itemNavigation {
+    background: none;
+    border-bottom: none;
+    border-top: none;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+div.itemIntroText {
+    color: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    line-height: inherit;
+    margin: 0 1em 0 0;
+    padding: 0;
+}
+div.itemFullText {
+    margin: 0 1em 0 0;
+    padding: 0;
+}
+
+div.itemContentFooter {
+    border-top: none;
+    color: inherit;
+    display: block;
+    margin: 16px 0 4px;
+    padding: 0px;
+    text-align: right;
+}
+
+div.itemLinks {
+    margin: 0px 0;
+    padding: 0;
+}
+
+div.itemCategory {}
+div.itemImageBlock {float: left; margin: 0 19px 0 0; padding: 0;}
+span.itemImage {display: block; margin: 0; text-align: left;}
+span.itemImage img {border: none; padding: 0px;}
+div.itemBackToTop {text-align: right; display:none;}
+div.itemView {border-bottom: none;}
+div.itemBody {margin-bottom: 19px;}
+
+
+/*AddThis Social Buttons*/
+
+div.social-button{
+    overflow: hidden;
+    padding: 1em 0 3em;}
+	
+
+div.social-button span.label{
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 32px;
+    padding-right: 10px;
+	}
+	
+div.social-button div.addthis_toolbox{
+	float:left;}
+
+
+
+
+/*---Rating---*/
+
+div.catItemRatingBlock,
+div.itemRatingBlock {padding: 0; float:right;}
+
+div.catItemRatingBlock span{color:inherit;}
+
+div.catItemRatingBlock span,
+div.itemRatingBlock span {
+    display: block;
+    float: left;
+    font-style: normal;
+    margin: 0;
+    padding: 0 4px 0 0;
+}
+
+
+.itemRatingList, .itemRatingList a:hover, .itemRatingList .itemCurrentRating {
+    background: url("../images/system/transparent_star.png") repeat-x scroll transparent;}
+
+.itemRatingList{background-position: left top;}
+.itemRatingList a:hover {background-position: left -25px;}
+.itemRatingList .itemCurrentRating{background-position: left -25px;}
+
+div.itemRatingBlock span {
+    color:inherit;
+    display: block;
+    float: left;
+    font-style: normal;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 4px 0 0;
+}
+
+.component-content ul.itemRatingList {
+    background-position: left top;
+    float: left;
+    height: 25px;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 105px;
+}
+
+.itemRatingLog {
+    float: left;
+    font-size: 11px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+
+/*----------------Rockbox----------*/
+
+#sbox-overlay, #rokbox-overlay{z-index:655500 !important}
+#sbox-window, #rokbox-wrapper{z-index:655502 !important;}
+
+/*----------------Comments-------------*/
+
+div.itemCommentsForm p.itemCommentsFormNotes {border-top: none;}
+
+div.itemAuthorBlock {
+    background: none;
+    border: none;
+    margin: 0 0 16px;
+    padding: 0px;
+}
+
+div.itemComments {
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails {margin: 0; padding: 0;}
+
+div.itemComments ul.itemCommentsList li span.commentDate {
+    border-right: none;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 15px;
+}
+
+div.itemComments ul.itemCommentsList li span.commentAuthorName,
+div.itemComments ul.itemCommentsList li span.commentDate {
+    font-weight: bold; 
+    font-size: 11px;
+    padding-bottom: 0;
+    color: #505050;
+}
+
+div.itemComments ul.itemCommentsList li span.commentLink a,
+div.itemComments ul.itemCommentsList li span.commentLink a:hover,
+div.itemComments ul.itemCommentsList li span.commentToolbar a,
+div.itemComments ul.itemCommentsList li span.commentToolbar a:hover{
+    font: bold 10px/15px arial;
+    text-transform: uppercase;
+    color:#383838;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #cfcfcf;
+    padding: 2px 8px 3px;
+    display: inline-block;
+    
+    background-color: #fefefe;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e8e8e8)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #fefefe, #e8e8e8); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #fefefe, #e8e8e8); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #fefefe, #e8e8e8); /* IE10 */
+    background-image:      -o-linear-gradient(top, #fefefe, #e8e8e8); /* Opera 11.10+ */
+    background-image:         linear-gradient(to bottom, #fefefe, #e8e8e8);
+}
+	
+div.itemComments ul.itemCommentsList li span.commentLink a:hover,
+div.itemComments ul.itemCommentsList li span.commentToolbar a:hover {
+    color: #0493f7;
+}
+
+div.itemComments ul.itemCommentsList li img {
+    background: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    float: left;
+    padding: 0px;
+}
+
+div.itemComments ul.itemCommentsList li p{padding:0;}
+div.itemComments ul.itemCommentsList li {
+    border-bottom: none;
+    overflow: hidden;
+}
+
+div.itemCommentsForm form label.formName,
+div.itemCommentsForm form label.formEmail,
+div.itemCommentsForm form label.formUrl,
+div.itemCommentsForm form label.formComment,
+div.itemCommentsForm form input#submitCommentButton {display: block;}
+
+div.itemCommentsForm form label.formEmail,
+div.itemCommentsForm form label.formUrl,
+div.itemCommentsForm form label.formName {
+    margin: 0;
+}
+
+
+/*Loading*/
+div.itemCommentsForm form {	position:relative;}
+
+div.itemCommentsForm form span#formLog {
+    bottom: 10px;
+    display: block;
+    left: 250px;
+    line-height: 1.8em;
+    margin: 0;
+    position: relative;
+    top: -25px;	}
+
+div.itemCommentsForm form .formLogLoading {
+    background: url("../images/system/loading.gif") no-repeat scroll left center transparent;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+
+	
+/*Report Comment*/
+
+div.k2ReportCommentFormContainer {
+    margin: 0;
+    padding: 8px;
+    width: 480px;
+}
+
+/*---------------------------------------User Login page----------------------------*/
+
+div.component-content > div.login div.login-fields{margin-bottom:1em;}
+div.component-content > div.login div.login-fields label{
+	display:block;
+	float:left;
+	width:10em;}
+	
+input[type="checkbox"]{
+	background:none !important;
+	border:none !important;
+	position:relative;
+	top:2px;}
+	
+input[type="radio"]{
+	position:relative;
+	top:1px;}
+
+
+/*----------------------------------------Contact Form------------------------------*/
+
+.component-content form fieldset dt {
+    clear: left;
+    float: left;
+    padding: 0;
+    width: 150px;
+}
+
+.component-content form fieldset dd {
+    float: left;
+    padding: 0;
+	margin-bottom:1em;
+}
+
+.component-content .contact .button { margin: 0;}
+
+input.invalid,
+textarea.invalid{
+	border:1px solid #F00 !important;
+	box-shadow:none;}
+	
+#jform_contact_email_copy{    
+	display: inline;
+    height: auto;
+    left: 0;
+    margin: 0;
+    position: relative;
+    top: 4px;
+    width: auto;}
+
+
+/*-----------------------------------------Create Account------------------------------*/
+
+.k2AccountPage th.k2ProfileHeading {background: none; font-size: 2em; padding: 0 0 1em !important; text-align: left;}
+.k2AccountPage table.admintable td.key, .k2AccountPage table.admintable td.paramlist_key {
+    background: none;
+    border-bottom: none;
+    border-right: none;
+    width: 100px;
+}
+.component-content th {border-bottom: none;}
+.k2AccountPage div.k2AccountPageUpdate {border-top: none; margin: 0px; padding: 0px; text-align: left;}
+#josForm .componentheading{display:none;}
+#josForm .inputbox{margin: 0.5em 0;}
+.k2AccountPage table tr td label,
+table.adminFormK2 tr td label {margin: 0 0.5em 0 0; white-space: nowrap;}
+#josForm textarea#description, #josForm input#image{margin: 0 0 0.5em 0;}
+
+.k2AccountPage table.admintable td.key, .k2AccountPage table.admintable td.paramlist_key {text-align: left;}
+
+div.toggle-editor {margin-bottom: 8px; overflow: hidden; padding: 5px 0;}	
+.component-content div.toggle-editor a{padding:5px 10px; line-height:18px;}
+
+/*---------------------------------Reset & Remind--------------------------*/
+
+.component-content .reset,
+.component-content .remind,
+div.component-content > div.login{
+	padding: 2em 0;}
+	
+/*---------------------------------Frontend Editing----------------------------*/
+
+table.adminFormK2 tr td.adminK2LeftCol { text-align: left;}
+
+input.text_area.k2TitleBox,
+input.text_area.k2TitleAliasBox,
+select#catid{ margin: 5px 0;}
+table.adminFormK2 tr td.adminK2LeftCol{background:none;}
+
+div.k2ItemFormEditor div.toggle-editor{ margin: 0; overflow: visible; padding: 0;}
+
+#editor-xtd-buttons {margin-top: 0; padding: 0 5px;}
+	
+/*-----------------------------------Search Results------------------------------*/
+
+div.form-limit-and-counter{
+	padding:1em;
+	margin:1em 0;
+	overflow:hidden;}
+
+.component-content .form-limit,
+.component-content p.counter {
+	display:block;
+	padding:0;
+	margin:0;}
+	
+.component-content .form-limit{float:right;}
+.component-content p.counter{float:left;}
+
+.component-content dl.search-results dd.result-created,
+.component-content dl.search-results dd.result-category{
+	display:inline;
+	padding:0;}
+
+
+
+/*----------------------------------Sidebars------------------------------------------*/
+
+#rt-sidebar-a,
+#rt-sidebar-b,
+#rt-sidebar-c {
+    background: none;
+}
+
+	
+/*----------------------------------Modules------------------------------------------*/
+
+.rt-block {
+    margin-bottom: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+
+div.k2ItemsBlock ul li div.moduleItemIntrotext {
+    line-height:inherit;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 165px;
+    height: 159px;
+}
+
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
+     border: medium none;
+    float: left;
+    height: 95px;
+    margin: 0 0 4px;
+    padding: 0;
+    width: 165px;
+}
+
+#form-login {padding: 20px;}
+
+fieldset.input input#modlgn_username,
+fieldset.input input#modlgn_passwd {width: 250px !important;}
+
+#user-registration input {margin: 0;}
+#user-registration label {line-height: 32px;}
+
+ul.menu-style,
+div.k2LatestCommentsBlock ul,
+div.k2CategoriesListBlock ul,
+div.k2ArchivesBlock ul {
+    margin: 0;
+    padding: 10px 20px 17px;
+}
+
+ul.k2UserBlockActions,
+#form-login ul {margin: 0;}
+
+#k2Container .k2Pagination ul, 
+div.pagination ul {
+    margin: 0;
+    padding: 0px 20px 17px;
+}
+ul.k2UserBlockActions li,
+ul.menu-style li,
+#form-login ul li,
+div.k2LatestCommentsBlock ul li,
+div.k2CategoriesListBlock ul li,
+div.k2ArchivesBlock ul li,
+#k2Container .k2Pagination ul li, 
+div.pagination ul li {
+    list-style:none;
+    background: url(../images/template/hline.png) 0 0 repeat-x;
+}
+ul.k2UserBlockActions li:first-child,
+ul.menu-style li:first-child,
+#form-login ul li:first-child,
+div.k2LatestCommentsBlock ul li:first-child,
+div.k2CategoriesListBlock ul li:first-child,
+div.k2ArchivesBlock ul li:first-child,
+#k2Container .k2Pagination ul li:first-child, 
+div.pagination ul li:first-child {
+    background: none;
+}
+ul.k2UserBlockActions li a,
+ul.menu-style li a,
+#form-login ul li a,
+div.k2LatestCommentsBlock ul li a,
+div.k2CategoriesListBlock ul li a,
+div.k2ArchivesBlock ul li a {    
+    font: bold 12px/28px arial !important;
+    color: #8b8a8a;
+    text-transform: uppercase;
+}
+
+#k2Container .k2Pagination ul li a, 
+div.pagination ul li a {
+    color: white;
+}
+
+ul.k2UserBlockActions li a:hover,
+ul.menu-style li a:hover,
+#form-login ul li a:hover,
+div.k2LatestCommentsBlock ul li a:hover,
+div.k2CategoriesListBlock ul li a:hover,
+div.k2ArchivesBlock ul li a:hover,
+#k2Container .k2Pagination ul li a:hover, 
+div.pagination ul li a:hover {
+    color: black;
+}
+
+/*User Login*/
+
+#form-login #modlgn_remember{    
+	display: inline;
+    height: auto;
+    left: 1em;
+    margin: 0;
+    position: relative;
+    top: 2px;
+    width: auto;}
+
+.k2Avatar img {
+    background: none;
+    border: none;
+    display: block;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0px;
+}
+
+div.k2UserBlock ul.k2UserBlockActions {	list-style:none;}
+
+/*Last Comments Module*/
+
+div.k2LatestCommentsBlock ul li {margin: 0 0 1em;}
+div.k2LatestCommentsBlock ul li a.k2Avatar{display: block; float: left;}
+div.k2LatestCommentsBlock ul li a.k2Avatar img {
+    background: none;
+    border: none;
+    margin: 0 1em 1em 0;
+    padding: 0px;
+}
+div.k2LatestCommentsBlock ul li span.lcUsername,
+div.k2LatestCommentsBlock ul li span.lcCommentDate {display:block;}
+div.k2LatestCommentsBlock ul li span.lcComment {clear: both; display: block;}
+
+
+/*Social Media links*/
+
+.smilecredits{display:none;}
+
+/*Search*/
+
+div.mod_search {
+    padding: 6px;
+    overflow: hidden;
+}
+div.mod_search  input#mod-search-searchword {
+    float: left;
+    margin: 0 1px 0 0;    
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    height: 21px;
+    line-height: 21px;
+    outline: medium none;
+    width: 204px;
+    padding: 0 10px;
+    border: none;
+    background: white;
+    
+    -moz-box-shadow: inset 0px 3px 4px #aeaeae; 
+    -webkit-box-shadow: inset 0px 3px 4px #aeaeae; 
+    box-shadow: inset 0px 3px 4px #aeaeae;
+}
+div.mod_search  input.button {
+    float: left;
+    margin: 0;
+    padding: 0px 0px 3px;
+    height: 21px;
+    width: 56px;
+    border: none;
+    border-top: 1px solid #484848;
+    font: 10px/18px arial !important;
+    text-transform: uppercase;
+    
+    background-color: #383838;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#383838), to(#272626)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #383838, #272626); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #383838, #272626); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #383838, #272626); /* IE10 */
+    background-image:      -o-linear-gradient(top, #383838, #272626); /* Opera 11.10+ */
+    background-image:         linear-gradient(to bottom, #383838, #272626);
+}
+div.mod_search  input.button:hover{
+    color: #159af8;
+}
+
+
+/*IE Warning*/
+
+#rt-iewarn {background:url(../images/system/ie-warn-bg.jpg) top left repeat-x;}
+#rt-iewarn .rt-container{background:none;}
+
+span.userItemEditLink a,
+span.userItemEditLink a:hover {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.SearchBody,
+.ContactBody {
+    padding: 0px;
+    background: url("../images/template/catItemBody.gif") repeat-x scroll 0 0 white;
+    border-bottom: 1px solid #E7E7E7;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 20px;
+}

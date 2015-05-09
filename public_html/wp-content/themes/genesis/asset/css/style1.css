@@ -1,0 +1,247 @@
+
+/*Logo*/
+
+
+#rt-logo {
+    height: 36px;
+    margin: 5px 0 19px 19px;
+    width: 238px;
+}
+#rt-logo > img {
+    height: 70px;
+}
+/*Buttons*/
+
+a.moduleItemReadMore,
+a.k2ReadMore,	
+div.itemCommentsForm form input#submitCommentButton,
+input[type="submit"],
+button.button,
+.component-content div.toggle-editor a {
+    border: none;
+}
+	
+a.moduleItemReadMore:hover,
+a.k2ReadMore:hover,
+div.itemCommentsForm form input#submitCommentButton:hover,
+input[type="submit"]:hover,
+button.button:hover,
+.component-content div.toggle-editor a:hover{}
+
+/*Typhography*/
+
+.module-title h2.title,
+div.catItemHeader h3.catItemTitle,
+div.itemHeader h2.itemTitle,
+div.userItemHeader h3.userItemTitle,
+div.itemCommentsForm h3,
+h3.itemCommentsCounter,
+div.k2AccountPage th.k2ProfileHeading,
+div.componentheading,
+h1 {
+    color:#3c3c3c;
+}
+
+/*=== Top Positions ===*/
+
+
+#rt-top {background: url(../images/top-tail.gif) center top repeat-y;}
+#rt-top .rt-container {background: url(../images/top-bg.gif) center top no-repeat;}
+
+/*=== Header Positions ===*/
+
+#rt-header{}
+#rt-header .rt-container{}
+
+
+/*=== Showcase Positions ===*/
+
+#rt-showcase{}
+#rt-showcase .rt-container{}
+
+
+/*=== Feature Positions ===*/
+
+#rt-feature{}
+#rt-feature .rt-container{}
+
+/*=== Utility Positions ===*/
+
+#rt-utility{}
+#rt-utility .rt-container{}
+
+/*=== MainTop Positions ===*/
+
+#rt-maintop{}
+#rt-maintop .rt-container{}
+
+
+/*=== MainContent ===*/
+
+#rt-main{}
+#rt-main .rt-container{}
+
+
+.rt-container {background: none;}
+
+/*Pagination*/
+
+div.k2Pagination,
+div.pagination {
+	color: #646464;
+}
+
+#k2Container .k2Pagination ul li span,
+#k2Container .k2Pagination ul li a,
+div.pagination ul li a,
+div.pagination ul li span {
+	background:#999;
+}
+	
+#k2Container .k2Pagination ul li.pagination-start span.pagenav,
+#k2Container .k2Pagination ul li.pagination-prev span.pagenav,
+#k2Container .k2Pagination ul li.pagination-end span.pagenav,
+#k2Container .k2Pagination ul li.pagination-next span.pagenav,
+div.pagination ul li.pagination-start span.pagenav,
+div.pagination ul li.pagination-prev span.pagenav,
+div.pagination ul li.pagination-end span.pagenav,
+div.pagination ul li.pagination-next span.pagenav {
+	background:#999;
+}
+	
+#k2Container .k2Pagination ul li span.pagenav,
+div.pagination ul li span.pagenav {
+	background:#000;
+}
+
+
+#k2Container .k2Pagination ul li.pagination-start a,
+#k2Container .k2Pagination ul li.pagination-prev a,
+#k2Container .k2Pagination ul li span,
+#k2Container .k2Pagination ul li a,
+#k2Container .k2Pagination ul li a.pagenav:hover,
+#k2Container .k2Pagination ul li.pagination-end a,
+#k2Container .k2Pagination ul li.pagination-next a,
+div.pagination ul li.pagination-start a,
+div.pagination ul li.pagination-prev a,
+div.pagination ul li span,
+div.pagination ul li a,
+div.pagination ul li a.pagenav:hover,
+div.pagination ul li.pagination-end a,
+div.pagination ul li.pagination-next a {
+	color:#fff;
+}
+	
+#k2Container .k2Pagination ul li.pagination-start a:hover,
+#k2Container .k2Pagination ul li.pagination-prev a:hover,
+#k2Container .k2Pagination ul li.pagination-end a:hover,
+#k2Container .k2Pagination ul li.pagination-next a:hover,
+#k2Container .k2Pagination ul li a:hover,
+div.pagination ul li.pagination-start a:hover,
+div.pagination ul li.pagination-prev a:hover,
+div.pagination ul li.pagination-end a:hover,
+div.pagination ul li.pagination-next a:hover,
+div.pagination ul li a:hover {
+	background:#000;
+	color:#fff;
+}
+	
+/*Forms*/
+
+#jform_contact_message,
+#commentText {
+	background:#b1b1b1;
+	border:1px solid #b1b1b1;
+}
+
+#form-login .inputbox,
+#com-form-login .inputbox, 
+#josForm .inputbox,
+input.inputbox[type="text"],
+input.inputbox[type="password"],
+input.inputbox[type="email"],
+input#url,
+input.required[type="text"],
+input.required[type="password"],
+input.required[type="email"]{
+	background:#b1b1b1;
+	border:1px solid #b1b1b1;
+}
+
+	
+#contact-form label,
+div.k2AccountPage table.admintable label {
+	font-size:1em;
+	line-height:2em;
+}
+	
+/*Comments*/
+
+div.itemComments ul.itemCommentsList {
+    margin: 0 0 19px; 
+    padding: 20px 20px 22px;
+    background: url(../images/catItemBody.gif) 0 0 repeat-x white;
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #e7e7e7;
+ }
+
+
+div.itemComments ul.itemCommentsList li {
+    border-top: 1px solid #e5e5e5;
+}
+div.itemComments ul.itemCommentsList li:first-child {
+    border: none;
+}
+	
+div.itemComments ul.itemCommentsList li.unpublishedComment {
+	background: none;
+}
+
+div.itemComments ul.itemCommentsList li.authorResponse {
+	background: none;
+    overflow: hidden;
+}
+	
+div.itemComments ul.itemCommentsList li span.commentToolbar {
+	
+}
+	
+/*Google Map*/
+	
+div.map-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+/*Search Results*/
+
+div.form-limit-and-counter {
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+
+
+/*=== MainBottom Positions ===*/
+
+#rt-mainboottom {}
+#rt-mainbottom .rt-container {}
+
+
+/*=== Bottom Positions ===*/
+
+#rt-boottom {}
+#rt-bottom .rt-container {}
+
+
+/*=== Footer Positions ===*/
+
+#footer {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-container {}
+
+
+#rt-footer, #rt-copyright {
+    color: inherit;
+}
