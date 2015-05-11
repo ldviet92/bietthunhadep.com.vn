@@ -82,7 +82,7 @@ h1 {
 #rt-main .rt-container{}
 
 
-.rt-container {background: none;}
+.rt-container {background: none;margin-top: 30px;}
 
 /*Pagination*/
 

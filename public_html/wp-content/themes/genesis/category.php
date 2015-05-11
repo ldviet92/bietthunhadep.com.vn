@@ -32,7 +32,6 @@ function child_grid_loop_helper() {
     // lay id cua category
     $id_Category = get_queried_object()->term_id;
 
-
     if (is_category()) {
 //        echo '<div class="home-categorys">';
 //        // $j=0;
@@ -100,7 +99,7 @@ function child_grid_loop_helper() {
                                 <div id="k2ModuleBox94" class="k2ItemsBlock tabs">
                                     <div id="tabs">
                                     <ul>
-                                            <li><a class="moduleTabTitle" href="#tab-0">Công trình & dự án</a></li>
+                                            <li><a class="moduleTabTitle" href="#tab-0">'.get_the_category_by_id($id_Category).'</a></li>
 
                                         </ul> <div id="tab-0" class="even">
                                             <div class="moduleItemIntrotext" style="margin-left: 20px;">';
@@ -122,40 +121,42 @@ function child_grid_loop_helper() {
     }
 }
 function getpost($id_Category,$categories){
-    foreach ($categories as $cat) {
-            $category_ids = $cat->term_id; 
-            if ($category_ids == $id_Category) {
-                $category_num = $cat->category_count;
+//    foreach ($categories as $cat) {
+//            $category_ids = $cat->term_id; 
+//            var_dump($id_Category);
+//            die();
+//            if ($category_ids == $id_Category) {
+                $category_ids = $id_Category;
+                if ($category_ids) {
+//                $category_num = $cat->category_count;
                 $category_link = get_category_link($category_ids);
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                $args = array('category__in' => $category_ids, 'paged' => $paged, 'posts_per_page' => 12);
+                $args = array('category__in' => $category_ids, 'paged' => $paged, 'posts_per_page' => 10);
                 $my_query = new wp_query($args);
                 $count = 0;
-                $countpost = 0;
+//                $countpost = 0;
                 while ($my_query->have_posts()) {
                     $my_query->the_post();
-                    $e = 0;
-//                    $slug =  get_the_excerpt();
-//                    $slug = explode("  ", $slug);
-//                    var_dump($slug);
-                    if ($e == 0) {
-                         echo '<div class="project1"><a rel="dofollow" title="' . get_the_title() . '" class="ititle" href="' . get_permalink() . '">' . get_the_title() . '</a><a title="' . get_the_title() . '" href="' . get_the_title() . '">';thumb_img($post->ID, '290', '410', '100', get_the_title());echo '</a><div class="introtext"><p>
-                                                <span style="color:#696969;"><em>' . get_the_excerpt() . '<em></em></p>
+//                    $e = 0;
+//                    if ($e == 0) {
+                         echo '<div class="project1"><a rel="dofollow" title="' . get_the_title() . '" class="ititle" href="' . get_permalink() . '">' . get_the_title() . '</a><a title="' . get_the_title() . '" href="' . get_permalink() .  '">';thumb_img($post->ID, '290', '410', '100', get_the_title());echo '</a><div class="introtext" style="width:100%"><p style="font: 13px Arial;">
+                                                <span style="color:#696969;"></span><em>' . get_the_excerpt() . '<em></em></p>
                                             </div></div>';
                          $count++;
                          if($count==2){
                              echo '<div style="clear:both;margin:5x;height:20px;widht:700px" color="#999999" /></div>';
                              $count = 0;
                          }
-                    }
-                    $countpost++;
-                    if($countpost ==10){
-                        break;
-                    }
+//                    }
+//                    $countpost++;
+//                    if($countpost ==10){
+//                        $countpost = 0;
+//                        break;
+//                    }
                 }
             }
     
-    }
+//    }
    wp_paginate();
 }
 function getsubcategory($id) {

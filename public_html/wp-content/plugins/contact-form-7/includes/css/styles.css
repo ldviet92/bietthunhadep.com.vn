@@ -37,6 +37,13 @@ div.wpcf7-validation-errors {
 
 span.wpcf7-form-control-wrap {
 	position: relative;
+        font-size:12px;
+}
+span.wpcf7-form-control-wrap input{
+    width: 204px;
+}
+span.wpcf7-form-control-wrap textarea {
+    height: 77px;
 }
 
 span.wpcf7-not-valid-tip {

@@ -47,7 +47,6 @@ require_once( dirname(__FILE__) . '/lib/init.php' );
 
 
 add_action('genesis_meta', 'raynoblog_custom_home_loop');
-
 function raynoblog_custom_home_loop() {
 
     if (is_home()) {
@@ -65,39 +64,174 @@ function raynoblog_custom_home_loop() {
 }
 
 add_action('genesis_loop', 'child_do_custom_loop');
-
 function child_do_custom_loop() {
     if (is_home()) {
 //        importcss();
         list_new_category();
-        $arrayItem = array('5', '6', '24', '11', '20');
-        echo '<div class="home-categorys">';
+        
+        $arrayItem = array('4', '11', '20', '15');
+//        echo '<div class="home-categorys">';
+//        for ($i = 0; $i < sizeof($arrayItem); $i++) {
+//            $category_ids = $arrayItem[$i];
+//            $cat = get_the_category_by_ID($category_ids);
+//            $category_link = get_category_link($category_ids);
+//            $j++;
+//            if ($category_ids == $arrayItem[$i]) {
+//                echo '<div id="home-category">';
+//                echo '<ul id="item-category">';
+//                $args = array('category__in' => $category_ids, 'showposts' => 1);
+//                $my_query = new wp_query($args);
+//                $e = 0;
+//                echo '<div class="categoryRight">';
+//                while ($my_query->have_posts()) {
+//                    $my_query->the_post();
+//                    if ($e == 1) {
+//                        
+//                    } else {
+//                        echo '<li><div class="title-category"><a href="' . esc_url($category_link) . '">' . $cat . '</a></div><div class="cate-titlerest"><div class="cate-imgthumb"><a href="' . get_permalink() . '">';
+//                        thumb_img($post->ID, '290', '410', '100', get_the_title());
+//                        echo '</a></div><h2><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2><div class="cate-des2">' . get_the_excerpt() . '</div></div></li>';
+//                    }
+//                }
+//                echo '</div></ul> </div>';
+//            }
+//        }
+        echo ' <div class="rt-container">
+            <div class="rt-grid-8">
+        <div id="rt-content-bottom">
+        <div class="rt-grid-8 rt-alpha rt-omega">
+        <div class="tabs">
+            <div class="rt-block">
+                <div id="k2ModuleBox94" class="k2ItemsBlock tabs">
+                    <div id="tabs">
+                        <ul>
+                            <li><a class="moduleTabTitle" href="#tab-0">Bài viết nổi bật</a></li>
+                            <li><a class="moduleTabTitle" href="#tab-1">Bài viết xem nhiều</a></li>
+                            <li><a class="moduleTabTitle" href="#tab-2">Bài viết mới</a></li>
+                        </ul>';
+        echo '<div id="tab-0" class="even">
+                            <div class="moduleItemIntrotext">
+                                ';
+                   for ($i = 0; $i < sizeof($arrayItem); $i++) {
+                       if($i == 0 || $i == 2){
+                           echo '<ul class="list">';
+                       }
+                       $category_ids = $arrayItem[$i];
+                        $cat = get_the_category_by_ID($category_ids);
+                        $category_link = get_category_link($category_ids);
+                        $j++;
+                        if ($category_ids == $arrayItem[$i]) {
+                            $args = array('category__in' => $category_ids, 'showposts' => 1);
+                            $my_query = new wp_query($args);
+                            $e = 0;
+                            while ($my_query->have_posts()) {
+                                $my_query->the_post();
+                                if ($e == 1) {
+
+                                } else {
+                                     echo '<li>
+                                    <p ><a class="danhmuc" href="' . esc_url($category_link) . '">' . $cat . '</a></p>
+                                    <a href="' . get_permalink() . '">';
+                                     thumb_img($post->ID, '290', '410', '100', get_the_title());
+                                     echo'</a>
+                                    <!--<span class="date">2014-03-18 22:53:56 - Lượt xem: 103</span>-->
+                                    <h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>
+                                    <p>' . get_the_excerpt() . '</p>
+
+                                    <!--	<a href="#http://bietthunhadep.com.vn/Mau-nha-dep/355/news" class="link">Xem thêm</a>-->
+                                </li>';
+                                }
+                            }
+                           
+                        }
+                          if($i == 1 || $i == 4){
+                           echo '</ul>';
+                       }
+                   }             
+        echo '</div></div>';
+        echo '<div id="tab-1" class="even">
+                            <div class="moduleItemIntrotext">
+                                <ul class="list">';
         for ($i = 0; $i < sizeof($arrayItem); $i++) {
-            $category_ids = $arrayItem[$i];
-            $cat = get_the_category_by_ID($category_ids);
-            $category_link = get_category_link($category_ids);
-            $j++;
-            if ($category_ids == $arrayItem[$i]) {
-                echo '<div id="home-category">';
-                echo '<ul id="item-category">';
-                $args = array('category__in' => $category_ids, 'showposts' => 1);
-                $my_query = new wp_query($args);
-                $e = 0;
-                echo '<div class="categoryRight">';
-                while ($my_query->have_posts()) {
-                    $my_query->the_post();
-                    if ($e == 1) {
-                        
-                    } else {
-                        echo '<li><div class="title-category"><a href="' . esc_url($category_link) . '">' . $cat . '</a></div><div class="cate-titlerest"><div class="cate-imgthumb"><a href="' . get_permalink() . '">';
-                        thumb_img($post->ID, '290', '410', '100', get_the_title());
-                        echo '</a></div><h2><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2><div class="cate-des2">' . get_the_excerpt() . '</div></div></li>';
-                    }
-                }
-                echo '</div></ul> </div>';
-            }
-        }
+            
+//            wpp_get_mostpopular( 'cat="4"&limit=1&post_html="<li>
+//                                               <p ><a class=\"danhmuc\" href=\"{url}\">{category}</a></p>
+//                                               <a href=\"{url}\">{thumb}</a>
+//                                               <!--<span class="date">{date}</span>-->
+//                                               <h3><a href=\"{url}\">{title}</a></h3>
+//                                               <p>{text_title} </p>
+//                                           </li>"' );
+            
+        if($i == 0 || $i == 2){
+                           echo '<ul class="list">';
+                       }
+                                  $category_ids = $arrayItem[$i];
+                        $cat = get_the_category_by_ID($category_ids);
+                        $category_link = get_category_link($category_ids);
+                        $j++;
+                        if ($category_ids == $arrayItem[$i]) {
+                                     echo '<li>
+                                    <p ><a class="danhmuc" href="' . esc_url($category_link) . '">' . $cat . '</a></p>';
+//                                    echo'<a href="' . get_permalink() . '" class="post_max_size">';
+                                     wpp_get_mostpopular('cat="'.$category_ids.'"&limit=1&thumbnail_width=257&thumbnail_height=141');
+//                                     echo'det</a>
+                                   echo' <h3>';
+//                                     wpp_get_mostpopular('cat="'.$category_ids.'"&limit=1&post_html="{title}"');
+                                     echo'</h3>
+                                    <p>'; 
+                                     wpp_get_mostpopular('cat="4"&limit=1&excerpt_length=100&post_html="<li>{thumb} {summary}</li>"' ); 
+                                    echo '</p>
+
+                                   
+                                </li>';
+                            
+                           
+                        }
+                        if($i == 1 || $i == 4){
+                           echo '</ul>';
+                       }
+//            wpp_get_mostpopular('excerpt_length=100&post_html="<li>{thumb} {title} {summary}</li>"' ); 
+        }                
+        echo '</div></div>';
+        echo '<div id="tab-2" class="even">
+                            <div class="moduleItemIntrotext">
+                               ';
+              for ($i = 0; $i < sizeof($arrayItem); $i++) {
+                       if($i == 0 || $i == 2){
+                           echo '<ul class="list">';
+                       }
+                       $category_ids = $arrayItem[$i];
+                        $cat = get_the_category_by_ID($category_ids);
+                        $category_link = get_category_link($category_ids);
+                        $j++;
+                        if ($category_ids == $arrayItem[$i]) {
+                            $args = array('category__in' => $category_ids, 'showposts' => 1);
+                            $my_query = new wp_query($args);
+                            $e = 0;
+                            while ($my_query->have_posts()) {
+                                $my_query->the_post();
+                                     echo '<li>
+                                    <p ><a class="danhmuc" href="' . esc_url($category_link) . '">' . $cat . '</a></p>
+                                    <a href="' . get_permalink() . '">';
+                                     thumb_img($post->ID, '290', '410', '100', get_the_title());
+                                     echo'</a>
+                                    <!--<span class="date">2014-03-18 22:53:56 - Lượt xem: 103</span>-->
+                                    <h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>
+                                    <p>' . get_the_excerpt() . '</p>
+
+                                    <!--	<a href="#http://bietthunhadep.com.vn/Mau-nha-dep/355/news" class="link">Xem thêm</a>-->
+                                </li>';
+                            }
+                           
+                        }
+                         if($i == 1 || $i == 4){
+                           echo '</ul>';
+                       }
+                   }                      
+        echo '</div></div>';
+        echo '</div></div></div></div></div></div></div>';
         echo '</div>';
+  
         list_library();
         view_post_new();
         echo '<div id="footer">
@@ -149,7 +283,6 @@ function view_post_new() {
     $myposts = get_posts('posts_per_page=5');
     echo '<div class="home-categorys"><div id="home-category">';
     echo '<ul id="item-category">';
-
     $count = 0;
     $itemfirst;
     foreach ($myposts as $mypost) {
@@ -207,7 +340,7 @@ function list_new_category() {
                                                       ';
             echo get_the_post_thumbnail($mypost->ID, 'thumbnail');
 
-            echo '</div></div>
+            echo '</a></div></div>
                                         <div class="clr"></div>
                                                        </li>';
         }
@@ -270,56 +403,64 @@ function list_library_work() {
 }
 
 function contact() {
-    echo '<div class="rt-block" style="margin-top: 10px;">
+//    echo '<div class="rt-block" style="margin-top: 10px;">
+//                <div class="module-title">
+//                    <h2 class="title">Gửi câu hỏi tư vấn</h2>
+//                </div>
+//                <div class="khungquangcao1">
+//                    <div id="formlienhe">
+//                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px;">
+//
+//                            <tbody><tr>
+//                                <td width="100%" valign="top">
+//
+//
+//                                    <form action="http://bietthunhadep.com.vn/Lien-he/5/blog" method="post">
+//
+//                                        <table width="100%" border="0" cellspacing="5" cellpadding="4">
+//                                            <tbody><tr>
+//                                                <td valign="top">To</td>
+//                                                <td valign="top"><input class="widt2" type="text" readonly="readonly"  value="goodhopearc@gmail.com" name="to">
+//                                                    <input type="hidden" size="30" value="goodhopejsc1@gmail.com" name="from">
+//                                                    <input type="hidden" size="30" value="01081990" name="pass">
+//                                                    <input type="hidden" size="30" value="Khách hàng" name="name">
+//                                                </td>
+//                                            </tr>
+//                                            <tr>
+//                                                <td valign="top">Tiêu đề</td>
+//                                                <td valign="top"><input class="widt2" type="text" size="30" value="" name="subject"></td>
+//                                            </tr>
+//                                            <tr>
+//                                                <td valign="top">Email</td>
+//                                                <td valign="top"><input class="widt2" type="text" size="30" value="" name="email"></td>
+//                                            </tr>
+//                                            <tr>
+//                                                <td valign="top">Điện thoại</td>
+//                                                <td valign="top"><input class="widt2" type="text" size="30" value="" name="dt"></td>
+//                                            </tr>
+//                                            <tr>
+//                                                <td valign="top">Nội dung</td>
+//                                                <td valign="top"><textarea rows="5" cols="23" name="message"></textarea></td>
+//                                            </tr>
+//                                            <tr>
+//                                                <td>&nbsp;</td>
+//                                                <td><input type="submit" value="Gửi đi"> </td>
+//                                            </tr>
+//                                            </tbody></table>
+//
+//                                    </form>                                                                       			</td>
+//
+//                            </tr>
+//                            </tbody></table></div>
+//                </div>
+//            </div>';
+        echo '<div class="rt-block" style="margin-top: 10px;">
                 <div class="module-title">
                     <h2 class="title">Gửi câu hỏi tư vấn</h2>
                 </div>
-                <div class="khungquangcao1">
-                    <div id="formlienhe">
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px;">
-
-                            <tbody><tr>
-                                <td width="100%" valign="top">
-
-
-                                    <form action="http://bietthunhadep.com.vn/Lien-he/5/blog" method="post">
-
-                                        <table width="100%" border="0" cellspacing="5" cellpadding="4">
-                                            <tbody><tr>
-                                                <td valign="top">To</td>
-                                                <td valign="top"><input class="widt2" type="text" readonly="readonly"  value="goodhopearc@gmail.com" name="to">
-                                                    <input type="hidden" size="30" value="goodhopejsc1@gmail.com" name="from">
-                                                    <input type="hidden" size="30" value="01081990" name="pass">
-                                                    <input type="hidden" size="30" value="Khách hàng" name="name">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td valign="top">Tiêu đề</td>
-                                                <td valign="top"><input class="widt2" type="text" size="30" value="" name="subject"></td>
-                                            </tr>
-                                            <tr>
-                                                <td valign="top">Email</td>
-                                                <td valign="top"><input class="widt2" type="text" size="30" value="" name="email"></td>
-                                            </tr>
-                                            <tr>
-                                                <td valign="top">Điện thoại</td>
-                                                <td valign="top"><input class="widt2" type="text" size="30" value="" name="dt"></td>
-                                            </tr>
-                                            <tr>
-                                                <td valign="top">Nội dung</td>
-                                                <td valign="top"><textarea rows="5" cols="23" name="message"></textarea></td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <td><input type="submit" value="Gửi đi"> </td>
-                                            </tr>
-                                            </tbody></table>
-
-                                    </form>                                                                       			</td>
-
-                            </tr>
-                            </tbody></table></div>
-                </div>
+                <div class="khungquangcao1">';
+         echo do_shortcode('[contact-form-7 id="2073" title="Liên hệ"]');
+               echo ' </div>
             </div>';
 }
 

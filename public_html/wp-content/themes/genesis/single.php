@@ -1,5 +1,6 @@
 <?php
 add_action( 'genesis_loop', 'genesis_do_loop' );
+remove_action('genesis_loop', 'genesis_do_loop');
 /**
  * Genesis Framework.
  *
@@ -11,6 +12,41 @@ add_action( 'genesis_loop', 'genesis_do_loop' );
  * @license GPL-2.0+
  * @link    http://my.studiopress.com/themes/genesis/
  */
+add_action( 'genesis_loop', 'loadpage' );
+function loadpage(){
+//    global $paged;
+//    $args = array('post_type' => 'PostType');
+//	// Accepts WP_Query args (http://codex.wordpress.org/Class_Reference/WP_Query)
+//    genesis_custom_loop( $args );
+    $name_category = get_the_category();
+            echo '<div class="rt-container">
+            <!----start grid -8 -->
+            <div class="rt-grid-8">
+                <div id="rt-content-bottom">
+                    <div class="rt-grid-8 rt-alpha rt-omega">
+                        <div class="tabs">
+                            <div class="rt-block">
+                                <div id="k2ModuleBox94" class="k2ItemsBlock tabs">
+                                    <div id="tabs">
+                                    <ul>
+                                            <li><a class="moduleTabTitle" href="#tab-0">'.$name_category[0]->name.'</a></li>
+
+                                        </ul> <div id="tab-0" class="even">
+                                            <div class="moduleItemIntrotext" style="margin-left: 20px;">';
+                echo the_content();
+        echo '</div></div></div></div></div></div></div></div></div></div>';
+        list_library();
+         echo '<div id="footer">
+    <div class="footer-container">
+    <div id="rt-footer">
+        <div class="rt-container">    ';
+        slider_post_thietkenoithat(6);
+        slider_post_thietkebietthu(5);
+        slider_post_thietkenhapho(7);
+        slider_post_thietkevanphongkhachsan(8);
+        slider_post_thietkecongtrinhduan(4);
+        echo '</div></div></div></div>';
+}
 
 //* This file handles single entries, but only exists for the sake of child theme forward compatibility.
 genesis();

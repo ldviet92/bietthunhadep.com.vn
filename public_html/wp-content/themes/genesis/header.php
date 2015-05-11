@@ -76,30 +76,30 @@ wp_head(); //* we need this for plugins
     <!--<script src="http://bietthunhadep.com.vn/js/jcarousel.responsive.js" type="text/javascript"></script>-->
     <!--<link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/modal.css" type="text/css"/>-->
     <!--<link  media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/k2.css" type="text/css"/>-->
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/gantry.css" type="text/css"/>
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/grid-12.css" type="text/css"/>
-    <link  rel="stylesheet" href="wp-content/themes/genesis/asset/css/style1.css" type="text/css" />
-    <link  rel="stylesheet" href="wp-content/themes/genesis/asset/css/reponsive.css" type="text/css" />
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/template.css" type="text/css"/>
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/tooltips.css" type="text/css"/>
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/framework-reset.css" type="text/css"/>
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/fusionmenu.css" type="text/css"/>
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/gantry.css" type="text/css"/>
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/grid-12.css" type="text/css"/>
+    <link  rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/style1.css" type="text/css" />
+    <link  rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/reponsive.css" type="text/css" />
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/template.css" type="text/css"/>
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/tooltips.css" type="text/css"/>
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/framework-reset.css" type="text/css"/>
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/fusionmenu.css" type="text/css"/>
     <link  rel="stylesheet" href="wp-content/themes/genesis/asset/css/tabs.css" type="text/css"/>
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/jquery.jcarousel.css" type="text/css"/>
-    <link media="(min-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/nivo-slider.css" type="text/css"/>
-    <link media="(max-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/style.css" type="text/css"/>
-    <link media="(max-width: 600px)" rel="stylesheet" href="wp-content/themes/genesis/asset/css/fusionmenu2.css" type="text/css"/>
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/jquery.jcarousel.css" type="text/css"/>
+    <link media="(min-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/nivo-slider.css" type="text/css"/>
+    <link media="(max-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/style.css" type="text/css"/>
+    <link media="(max-width: 600px)" rel="stylesheet" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/css/fusionmenu2.css" type="text/css"/>
 
-    <script src="wp-content/themes/genesis/asset/js/jquery.min.js" type="text/javascript"></script>
-    <script src="wp-content/themes/genesis/asset/js/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="wp-content/themes/genesis/asset/js/scripts.js" type="text/javascript"></script>
-    <script src="wp-content/themes/genesis/asset/js/fusion.js" type="text/javascript"></script>
-    <script src="wp-content/themes/genesis/asset/js/jquery.jcarousel.min.js" type="text/javascript"></script>
-    <script src="wp-content/themes/genesis/asset/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/js/jquery.min.js" type="text/javascript"></script>
+    <script src="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/js/scripts.js" type="text/javascript"></script>
+    <script src="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/js/fusion.js" type="text/javascript"></script>
+    <script src="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+    <script src="http://bietthunhadep.com.vn/wp-content/themes/genesis/asset/js/jquery.nivo.slider.js" type="text/javascript"></script>
     
     
     
-    <link rel="stylesheet" type="text/css" href="wp-content/themes/genesis/lib/css/jcarousel.responsive.css">
+    <link rel="stylesheet" type="text/css" href="http://bietthunhadep.com.vn/wp-content/themes/genesis/lib/css/jcarousel.responsive.css">
     <script type="text/javascript">
 
         window.addEvent('load', function() {

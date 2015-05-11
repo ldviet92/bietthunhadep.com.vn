@@ -123,13 +123,13 @@ function drawslider() {
 
     echo "<div id=\"featured\" >";
     echo "<div class='slider-category'><h3><b>Bài viết mới</b></h3></div>";
-    echo "<ul class=\"ui-tabs-nav\">";
+    echo "<ul class=\"ui-tabs-nav\" style='font:10px/15px arial'>";
     foreach( $recent_posts as $recent ){
         $postid = $recent["ID"];
         $thumbnail =  get_the_post_thumbnail($postid, array(50,50) );
 ?>
         <li class="ui-tabs-nav-item " id="nav-fragment-<?php echo $recent["ID"] ?> ">
-            <a href="#fragment-<?php echo $recent["ID"]; ?>"><?php echo $thumbnail ?><span><span class="date-home"><?php echo get_the_date('Y/m/d g:i:s',$recent["ID"]) ?></span></br><?php echo esc_attr($recent["post_title"]); ?></span></a>
+            <a style="height:75px;width: 260px" href="#fragment-<?php echo $recent["ID"]; ?>"><?php echo $thumbnail ?><span style="text-transform: none;font-size: 12px"><span class="date-home"><?php echo get_the_date('Y/m/d g:i:s',$recent["ID"]) ?></span></br><?php echo esc_attr($recent["post_title"]); ?></span></a>
         </li>
 <?php
     }

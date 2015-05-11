@@ -711,7 +711,7 @@ textarea {
 	padding: 16px;
 
 	width: 100%;*/
-	float: left;
+/*	float: left;
   margin: 0 1px 0 0;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 1em;
@@ -722,7 +722,7 @@ textarea {
   padding: 0 10px;
   border: none;
   background: white;
-  margin: 6px;
+  margin: 6px;*/
 }
 
 
@@ -1058,7 +1058,7 @@ th {
 
 	width: 100%;
 
-        padding-bottom: 30px;
+/*        padding-bottom: 30px;*/
 
 }
 
@@ -1377,7 +1377,7 @@ height: 37px;
 
 	width: 1px;*/
 
-	float: left;
+	/*float: left;*/
   margin-top: 6px;
   padding: 0px 0px 3px;
   height: 21px;
@@ -2349,7 +2349,7 @@ border-right: none;
 
 	margin-bottom: 28px;
 
-	margin-left: 40px;
+	/*margin-left: 40px;*/
 
 }
 
@@ -3203,9 +3203,9 @@ color: #61AE20;
 
   text-align: left;
 
-  margin-top: 13px;
+/*  margin-top: 13px;
 
-  margin-bottom: 47px;
+  margin-bottom: 47px;*/
 
 }
 
@@ -3296,6 +3296,7 @@ background-size: 100%;
 background: url(../../../images/social/you.png);
 background-size: 100%;
   background-repeat: no-repeat;
+  margin-top: 1px;
 }.google {
 
 background: url(../../../images/social/g.png);
@@ -4141,7 +4142,7 @@ color: #fff;
 
 .entry-content p {
 
- font-size: 9px;
+ font-size: 12px;
 
 }
 
@@ -5226,11 +5227,13 @@ width: 32px;
 
 
 
-ol.wp-paginate { text-align: right; }
+ol.wp-paginate { text-align: left; }
 
 ol.wp-paginate li .prev { margin-right: 5px; }
 
-ol.wp-paginate li .next { margin-left: 5px; }
+ol.wp-paginate li .next {
+    /*margin-left: 5px;*/ 
+}
 
 
 
